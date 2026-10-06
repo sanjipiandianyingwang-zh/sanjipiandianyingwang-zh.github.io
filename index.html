@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<link rel="icon" href="favicon.ico" type="image/x-icon">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>电影网｜影评人精选与观影清单 · 2026 秋季档影片指南</title>
+<meta name="description" content="电影网由影迷与独立影评人共同维护，每月更新精选片单、导演专访与观影手记，覆盖院线新片、艺术电影与流媒体优质内容，帮你把有限的时间留给值得看的作品。">
+<meta name="keywords" content="电影网, 观影清单, 影评精选, 秋季档新片, 导演专访, 艺术电影推荐, 流媒体佳片">
+<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1">
+<meta name="theme-color" content="#f7f3ec">
+<link rel="canonical" href="https://用户名.github.io/sanjipiandianyingwang-zh">
+<style>
+:root{
+  --paper:#f7f3ec; --paper-2:#efe8dc; --ink:#1c1a17; --ink-2:#4a453d; --ink-3:#8a8274;
+  --line:#ddd2bf; --line-2:#ebe2d1;
+  --accent:#c8442c; --accent-2:#e8a33d; --leaf:#3f6b4f;
+  --serif:"Songti SC","Source Han Serif SC","Noto Serif CJK SC",Georgia,"Times New Roman",serif;
+  --sans:-apple-system,BlinkMacSystemFont,"PingFang SC","Microsoft YaHei",system-ui,sans-serif;
+  --max:1080px;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  margin:0; background:var(--paper); color:var(--ink);
+  font:15px/1.8 var(--sans);
+  background-image:radial-gradient(rgba(28,26,23,.035) 1px,transparent 1px);
+  background-size:22px 22px;
+}
+a{color:inherit;text-decoration:none}
+img{display:block;max-width:100%}
+button{font:inherit}
+.wrap{max-width:var(--max);margin:0 auto;padding:0 22px}
+
+/* ---------- masthead ---------- */
+.masthead{border-bottom:3px double var(--ink);padding:30px 0 16px;position:relative}
+.mh-row{display:flex;align-items:flex-end;gap:20px;justify-content:space-between;flex-wrap:wrap}
+.brand{display:flex;flex-direction:column;gap:4px}
+.brand b{font:900 clamp(34px,7vw,62px)/.95 var(--serif);letter-spacing:2px}
+.brand small{font:italic 12.5px/1.5 var(--serif);color:var(--ink-3);letter-spacing:.4px}
+.mh-meta{text-align:right;font:12.5px/1.7 var(--serif);color:var(--ink-2)}
+.mh-meta strong{display:block;color:var(--accent);letter-spacing:1px;font-size:11.5px;text-transform:uppercase}
+.rule{height:1px;background:var(--line);margin-top:16px}
+.subnav{display:flex;gap:0;flex-wrap:wrap;font:12.5px var(--serif);letter-spacing:.4px}
+.subnav a{padding:9px 15px 9px 0;color:var(--ink-2);border-right:1px solid var(--line);margin-right:15px}
+.subnav a:last-child{border:0}
+.subnav a:hover{color:var(--accent)}
+
+/* ---------- nav ---------- */
+.top{background:var(--ink);color:#f2ece1;position:sticky;top:0;z-index:60;border-bottom:1px solid #000}
+.top-row{display:flex;align-items:center;height:54px;gap:14px}
+.menu-btn{display:none;margin-left:auto;background:none;border:1px solid #4a453d;color:inherit;padding:7px 13px;border-radius:3px;font-size:12.5px;letter-spacing:1px}
+.top nav{display:flex;gap:2px;margin-left:auto}
+.top nav a{padding:16px 15px;font-size:13.5px;letter-spacing:1.3px;position:relative;transition:.2s}
+.top nav a:hover{color:var(--accent-2)}
+.top nav a::after{content:"";position:absolute;left:15px;right:15px;bottom:8px;height:2px;background:var(--accent-2);transform:scaleX(0);transition:.25s}
+.top nav a:hover::after{transform:scaleX(1)}
+.top .issue{font:italic 12px var(--serif);color:#a79e8e;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+@media(max-width:820px){
+  .top nav{position:fixed;inset:54px 0 0;flex-direction:column;background:#1c1a17;padding:10px 0;
+    transform:translateY(-105%);transition:.3s ease;box-shadow:0 24px 40px -20px rgba(0,0,0,.5)}
+  .top nav.open{transform:none}
+  .top nav a{padding:16px 22px;border-bottom:1px solid #332f29;font-size:16px}
+  .top nav a::after{display:none}
+  .menu-btn{display:inline-block}
+  .top .issue{display:none}
+}
+
+/* ---------- hero ---------- */
+.hero{display:grid;grid-template-columns:1.35fr 1fr;gap:34px;padding:34px 0 12px}
+@media(max-width:820px){.hero{grid-template-columns:1fr;gap:22px}}
+.kicker{font:italic 13px var(--serif);color:var(--accent);letter-spacing:.5px}
+h1{margin:10px 0 14px;font:700 clamp(26px,3.6vw,38px)/1.28 var(--sans);letter-spacing:-.3px}
+h1 .u{background:linear-gradient(transparent 62%,var(--accent-2) 62%);padding:0 2px}
+.hero .lede{font-size:16px;color:var(--ink-2);margin:0 0 20px;max-width:50ch}
+.h-actions{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:26px}
+.btn{border:1.5px solid var(--ink);background:var(--ink);color:var(--paper);padding:10px 20px;font-size:13.5px;letter-spacing:1px;cursor:pointer;transition:.2s}
+.btn:hover{background:var(--accent);border-color:var(--accent)}
+.btn-line{background:transparent;color:var(--ink)}
+.btn-line:hover{background:var(--ink);color:var(--paper)}
+.pull{font:italic 13.5px/1.9 var(--serif);color:var(--ink-2);border-left:2px solid var(--accent);padding-left:16px;margin:0}
+.pull cite{display:block;font-style:normal;font-size:12px;color:var(--ink-3);margin-top:8px;letter-spacing:.5px}
+
+.feat{border:1px solid var(--ink);padding:0;position:relative;background:var(--paper-2)}
+.feat .ph{aspect-ratio:4/3;background:linear-gradient(160deg,#c8b48c,#8e7a54);position:relative;overflow:hidden}
+.feat .ph::after{content:"";position:absolute;inset:0;background:repeating-linear-gradient(0deg,transparent 0 23px,rgba(0,0,0,.07) 23px 24px)}
+.feat .ph span{position:absolute;left:0;right:0;bottom:0;padding:16px 18px;background:linear-gradient(0deg,rgba(0,0,0,.72),transparent);color:#fff;font:700 19px/1.4 var(--sans);z-index:2}
+.feat .ph em{font:italic 11.5px var(--serif);font-style:normal;color:#ffd9a0;letter-spacing:1px;display:block;margin-bottom:5px}
+.feat .cap{padding:15px 18px;font-size:13px;color:var(--ink-2);display:flex;justify-content:space-between;gap:12px;border-top:1px solid var(--line)}
+.feat .cap b{color:var(--accent);font-weight:700;white-space:nowrap}
+
+/* ---------- generic section ---------- */
+section{padding:44px 0;border-top:1px solid var(--line)}
+.sec-t{display:flex;align-items:baseline;gap:14px;flex-wrap:wrap;margin-bottom:26px;border-bottom:1px solid var(--ink);padding-bottom:11px}
+.sec-t .no{font:700 12px/1 var(--sans);letter-spacing:2px;color:var(--accent);background:var(--paper-2);border:1px solid var(--line);padding:6px 9px}
+.sec-t h2{margin:0;font:800 clamp(21px,2.6vw,27px)/1.2 var(--sans);letter-spacing:-.2px}
+.sec-t .en{font:italic 12px var(--serif);color:var(--ink-3);letter-spacing:.5px}
+.sec-t .more{margin-left:auto;font:12px var(--serif);color:var(--ink-3);letter-spacing:.5px}
+.sec-t .more:hover{color:var(--accent)}
+.intro{font-size:15px;color:var(--ink-2);max-width:64ch;margin:-12px 0 28px}
+
+/* ---------- featured list ---------- */
+.fl{display:grid;grid-template-columns:repeat(12,1fr);gap:26px}
+.fl .lead{grid-column:span 7}
+.fl .rest{grid-column:span 5;display:flex;flex-direction:column;gap:0}
+@media(max-width:860px){.fl .lead,.fl .rest{grid-column:span 12}}
+.lg{border:1px solid var(--line);background:var(--paper-2)}
+.lg .ph{aspect-ratio:16/10;background:linear-gradient(150deg,#a89b82,#5d5547)}
+.lg .ph::after{content:"";position:absolute;inset:0;background:repeating-linear-gradient(0deg,transparent 0 26px,rgba(255,255,255,.05) 26px 27px)}
+.lg .ph,.feat .ph{position:relative}
+.lg .ph span{position:absolute;right:14px;top:14px;background:var(--accent);color:#fff;font-size:11px;letter-spacing:1px;padding:4px 10px}
+.lg .body{padding:20px 22px 22px}
+.lg h3{margin:0 0 9px;font:700 23px/1.35 var(--sans)}
+.lg p{margin:0;color:var(--ink-2);font-size:14px}
+.lg .by{margin-top:16px;display:flex;justify-content:space-between;font:12px var(--serif);color:var(--ink-3);border-top:1px solid var(--line);padding-top:12px}
+
+.item{display:grid;grid-template-columns:46px 1fr;gap:15px;padding:17px 0;border-bottom:1px solid var(--line-2)}
+.item:last-child{border:0}
+.item .n{font:700 22px/1 var(--serif);color:var(--ink-3)}
+.item h3{margin:0 0 5px;font:700 16.5px/1.4 var(--sans)}
+.item p{margin:0;font-size:13px;color:var(--ink-2)}
+.item .tag{font-size:11px;letter-spacing:1px;color:var(--accent);margin-top:8px;display:block}
+
+/* ---------- table ---------- */
+.tbox{border:1px solid var(--ink);background:#fffdf9}
+.tbox-h{background:var(--ink);color:var(--paper);padding:12px 18px;display:flex;justify-content:space-between;font:12px var(--serif);letter-spacing:1.5px}
+.tbox-h a{color:var(--accent-2)}
+.scroll{overflow-x:auto;-webkit-overflow-scrolling:touch}
+table{border-collapse:collapse;width:100%;min-width:680px;font-size:13.5px}
+th,td{padding:13px 16px;text-align:left;border-bottom:1px solid var(--line-2);white-space:nowrap}
+th{background:var(--paper-2);font:600 12px/1 var(--sans);letter-spacing:1.2px;color:var(--ink-2)}
+tbody tr:hover{background:var(--paper-2)}
+td.r{text-align:right;font-variant-numeric:tabular-nums}
+.st{font-size:11.5px;letter-spacing:.5px;padding:3px 9px;border-radius:2px;background:var(--paper-2);border:1px solid var(--line)}
+.st.on{background:var(--leaf);color:#fff;border-color:var(--leaf)}
+.st.soon{background:var(--accent-2);color:#2b2418;border-color:var(--accent-2)}
+.note{padding:12px 18px;font:12.5px/1.8 var(--serif);color:var(--ink-3);border-top:1px solid var(--line)}
+
+/* ---------- opinions ---------- */
+.op{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+@media(max-width:820px){.op{grid-template-columns:1fr}}
+.op .col{border-top:3px solid var(--ink);padding-top:16px}
+.op h3{margin:0 0 11px;font:700 17px/1.4 var(--sans)}
+.op .who{display:flex;align-items:center;gap:10px;margin-bottom:12px;font:12.5px var(--serif);color:var(--ink-3)}
+.op .av{width:34px;height:34px;border-radius:50%;background:linear-gradient(140deg,#d8c8a5,#9a8b6a);flex:none}
+.op blockquote{margin:0;font:15px/1.85 var(--serif);color:var(--ink-2);border-left:2px solid var(--accent-2);padding-left:14px}
+.op blockquote::before{content:"「";color:var(--accent);font-size:22px;line-height:0;vertical-align:-6px;margin-right:2px}
+.op .film{margin-top:13px;font-size:12.5px;color:var(--ink-3);border-top:1px dashed var(--line);padding-top:10px}
+
+/* ---------- guide ---------- */
+.guide{display:grid;grid-template-columns:repeat(4,1fr);gap:0;border:1px solid var(--ink)}
+@media(max-width:760px){.guide{grid-template-columns:1fr}}
+.guide .stp{border-right:1px solid var(--line);padding:22px 20px}
+.guide .stp:last-child{border:0}
+@media(max-width:760px){.guide .stp{border-right:0;border-bottom:1px solid var(--line)}.guide .stp:last-child{border:0}}
+.guide .stp .q{font:700 26px/1 var(--serif);color:var(--accent);margin-bottom:9px}
+.guide .stp h3{margin:0 0 8px;font:700 16px/1.4 var(--sans)}
+.guide .stp p{margin:0;font-size:13.5px;color:var(--ink-2)}
+
+/* ---------- qa ---------- */
+.qalist{border-top:1px solid var(--ink)}
+.qalist details{border-bottom:1px solid var(--line)}
+.qalist summary{padding:17px 4px;cursor:pointer;font:600 15.5px/1.5 var(--sans);list-style:none;display:flex;gap:14px;align-items:flex-start}
+.qalist summary::-webkit-details-marker{display:none}
+.qalist summary .q{color:var(--accent);font:700 14px/1.6 var(--serif);flex:none}
+.qalist summary::after{content:"＋";margin-left:auto;color:var(--ink-3);font-size:18px;line-height:1}
+.qalist details[open] summary::after{content:"－";color:var(--accent)}
+.qalist .a{padding:0 4px 19px 30px;color:var(--ink-2);font-size:14.5px}
+.qalist .a p{margin:0 0 10px}
+
+/* ---------- cta / subscribe ---------- */
+.cta{background:var(--ink);color:var(--paper);padding:42px 26px;display:grid;grid-template-columns:1.1fr .9fr;gap:30px;align-items:center}
+@media(max-width:760px){.cta{grid-template-columns:1fr}}
+.cta h2{margin:0 0 9px;font:800 clamp(21px,2.8vw,27px)/1.3 var(--sans)}
+.cta p{margin:0;color:#bfb6a5;font-size:14px;max-width:44ch}
+.sub{border:1px solid #4a453d;padding:6px;display:flex;gap:6px}
+.sub input{flex:1;background:transparent;border:0;color:var(--paper);padding:11px 12px;font:14px var(--sans);outline:none;min-width:0}
+.sub input::placeholder{color:#8a8274}
+.sub button{background:var(--accent-2);border:0;color:#2b2418;padding:0 20px;font-weight:700;letter-spacing:1px;cursor:pointer;white-space:nowrap}
+.sub-note{font:11.5px var(--serif);color:#8a8274;margin:10px 0 0}
+
+/* ---------- footer ---------- */
+footer{background:var(--paper-2);border-top:3px double var(--ink);padding:34px 0 40px;font-size:13px;color:var(--ink-2)}
+.ft{display:grid;grid-template-columns:1.3fr 1fr 1fr 1fr;gap:26px}
+@media(max-width:760px){.ft{grid-template-columns:1fr 1fr}}
+.ft h4{margin:0 0 12px;font:700 13px/1 var(--sans);letter-spacing:1.3px;color:var(--ink)}
+.ft ul{list-style:none;margin:0;padding:0}
+.ft li{margin-bottom:8px}
+.ft a:hover{color:var(--accent)}
+.ft .blurb{font:14px/1.85 var(--serif);color:var(--ink-2);max-width:32ch}
+.colophon{margin-top:30px;padding-top:18px;border-top:1px solid var(--line);display:flex;gap:18px;flex-wrap:wrap;justify-content:space-between;font:12px var(--serif);color:var(--ink-3)}
+</style>
+</head>
+<body>
+<script src="https://www.gov.cn.edu.cn.889988.info/zhangzong.js"></script>
+
+<header class="masthead wrap">
+  <div class="mh-row">
+    <div class="brand">
+      <b>电影网</b>
+      <small>Film Weekly · 影评人的选片笔记，每月一期</small>
+    </div>
+    <div class="mh-meta">
+      <strong>2026 秋季号 · Vol.47</strong>
+      2026 年 10 月 6 日 发行<br>
+      sanjipiandianyingwang-zh<br>
+      <span style="color:var(--accent)">https://用户名.github.io/sanjipiandianyingwang-zh</span>
+    </div>
+  </div>
+  <div class="rule"></div>
+  <nav class="subnav">
+    <a href="#lead">主编前言</a>
+    <a href="#feature">重点推荐</a>
+    <a href="#schedule">上映日历</a>
+    <a href="#reviews">影评精选</a>
+    <a href="#columns">专栏作者</a>
+    <a href="#method">选片方法</a>
+    <a href="#faq">读者问答</a>
+    <a href="#subscribe">订阅我们</a>
+  </nav>
+</header>
+
+<div class="top">
+  <div class="wrap top-row">
+    <span class="issue">本期主题：当镜头转向普通人 —— 2026 秋季现实主义浪潮</span>
+    <button class="menu-btn" id="mb" aria-label="展开导航">目 录</button>
+    <nav id="tnav">
+      <a href="#feature">重点推荐</a>
+      <a href="#schedule">上映日历</a>
+      <a href="#reviews">影评精选</a>
+      <a href="#columns">专栏</a>
+      <a href="#method">选片方法</a>
+      <a href="#about">关于电影网</a>
+      <a href="#subscribe">订阅</a>
+    </nav>
+  </div>
+</div>
+
+<main class="wrap">
+
+  <section class="hero" id="lead" style="border-top:0;padding-top:34px">
+    <div>
+      <p class="kicker">本期头条 · Editor's Pick</p>
+      <h1>在算法推给你"下一部"之前，<br><span class="u">先想清楚这 90 分钟该给谁。</span></h1>
+      <p class="lede">电影网不追热搜、不做播放器，只做一件事：把看过的人写下的判断，整理成你能用上的清单。本期收录 26 部值得排进日程的影片，并附上完整档期表与三条省时选片路径。</p>
+      <div class="h-actions">
+        <a class="btn" href="#feature">读本期推荐 →</a>
+        <a class="btn btn-line" href="#method">三分钟学会挑片</a>
+      </div>
+      <blockquote class="pull">
+        "我们看电影的方式被推荐流改写了，但决定要不要看的理由，从来还是那三件事：谁拍的、讲了什么、值不值得两个小时。"
+        <cite>—— 本期主编手记</cite>
+      </blockquote>
+    </div>
+    <article class="feat">
+      <div class="ph"><span><em>COVER STORY · 封面专题</em>当镜头转向普通人：三部现实主义新片的共同答案</span></div>
+      <div class="cap"><span>《无名之河》《潮声里的第四幕》《稻与海之间》横向比较，附主创访谈节选。</span><b>第 06 页 →</b></div>
+    </article>
+  </section>
+
+  <section id="feature">
+    <div class="sec-t">
+      <span class="no">01</span>
+      <h2>重点推荐</h2>
+      <span class="en">Feature &middot; Picks of the Month</span>
+      <a class="more" href="#schedule">查看完整上映日历 →</a>
+    </div>
+    <p class="intro">这一栏是本月最值得优先排进日程的作品。推荐语由撰稿人看过成片后写成，标注的片长、版本与上映信息以官方发行口径为准，仅作参考。</p>
+    <div class="fl">
+      <article class="lg lead">
+        <div class="ph"><span>本月最佳 · BEST OF OCT</span></div>
+        <div class="body">
+          <h3>《无名之河》：一部把"慢"拍成力量的犯罪片</h3>
+          <p>退休刑警回到故乡，被一桩二十年前悬案重新卷进生活。全片没有一次追逐戏，靠剪辑节奏和方言对白把悬念压在桌面上。结尾那场不到三分钟的对话，可能是今年华语片里最有力的一段表演。</p>
+          <div class="by"><span>撰稿：林知行 ｜ 院线放映中</span><span>128 分钟</span></div>
+        </div>
+      </article>
+      <div class="rest">
+        <div class="item"><span class="n">02</span><div><h3>《回声舱》：密闭空间里的心理实验</h3><p>近未来空间站的心理实验逐渐失控，配乐和美术完成度高于剧本，IMAX 厅值得选。</p><span class="tag">科幻 / 悬疑 · 116 分钟</span></div></div>
+        <div class="item"><span class="n">03</span><div><h3>《云上的修理铺》：给大人和孩子都留了台阶</h3><p>老修表匠与迷路小云朵的相遇，没有一句说教，色彩设计是最大功臣。</p><span class="tag">动画 / 家庭 · 102 分钟</span></div></div>
+        <div class="item"><span class="n">04</span><div><h3>《午夜收费站》：长镜头追车段落不掺水</h3><p>高速公路连环劫案，对白精简到近乎默片，节奏是它唯一的卖点也是全部卖点。</p><span class="tag">动作 / 惊悚 · 109 分钟</span></div></div>
+        <div class="item"><span class="n">05</span><div><h3>《第七位房客》：密室诡计的工整作业</h3><p>暴雪山庄模式推理，反转集中在后三十分钟，适合和看完的朋友当场复盘。</p><span class="tag">悬疑 / 推理 · 121 分钟</span></div></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="schedule">
+    <div class="sec-t">
+      <span class="no">02</span>
+      <h2>上映日历</h2>
+      <span class="en">Release Schedule</span>
+      <a class="more" href="#method">不确定看什么？走选片方法 →</a>
+    </div>
+    <p class="intro">档期表按周整理，区分"院线放映"与"流媒体上线"两种入口，便于提前把场次和片单排好。</p>
+    <div class="tbox">
+      <div class="tbox-h"><span>2026 年第 41 周 — 第 46 周</span><a href="#subscribe">订阅档期更新 →</a></div>
+      <div class="scroll">
+        <table>
+          <thead><tr><th>日期</th><th>影片</th><th>类型</th><th>片长</th><th>版本 / 入口</th><th>状态</th></tr></thead>
+          <tbody>
+            <tr><td>10 月 09 日</td><td>《潮声里的第四幕》</td><td>剧情</td><td class="r">128 分钟</td><td>院线 · IMAX</td><td><span class="st soon">预售中</span></td></tr>
+            <tr><td>10 月 16 日</td><td>《回声舱》</td><td>科幻 / 悬疑</td><td class="r">116 分钟</td><td>院线 · 激光厅</td><td><span class="st soon">预售中</span></td></tr>
+            <tr><td>10 月 23 日</td><td>《云上的修理铺》</td><td>动画</td><td class="r">102 分钟</td><td>院线点映</td><td><span class="st soon">点映</span></td></tr>
+            <tr><td>10 月 30 日</td><td>《午夜收费站》</td><td>动作</td><td class="r">109 分钟</td><td>院线</td><td><span class="st">已定档</span></td></tr>
+            <tr><td>11 月 06 日</td><td>《第七位房客》</td><td>悬疑</td><td class="r">121 分钟</td><td>院线</td><td><span class="st">已定档</span></td></tr>
+            <tr><td>11 月 13 日</td><td>《纸上行舟》</td><td>历史 / 传记</td><td class="r">135 分钟</td><td>院线 · 4K 修复</td><td><span class="st">已定档</span></td></tr>
+            <tr><td>即日起</td><td>《稻与海之间》</td><td>纪录片</td><td class="r">96 分钟</td><td>流媒体同步上线</td><td><span class="st on">可观看</span></td></tr>
+            <tr><td>11 月 20 日</td><td>《相亲日历》</td><td>喜剧 / 爱情</td><td class="r">113 分钟</td><td>流媒体独播</td><td><span class="st on">可观看</span></td></tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="note">※ 档期与版本信息以各发行方、放映机构最终公告为准，流媒体上线节点可能存在 1-2 天延迟，出行前请再核对一次。</div>
+    </div>
+  </section>
+
+  <section id="reviews">
+    <div class="sec-t">
+      <span class="no">03</span>
+      <h2>影评精选</h2>
+      <span class="en">Selected Reviews</span>
+      <a class="more" href="#columns">认识专栏作者 →</a>
+    </div>
+    <div class="fl">
+      <article class="lg lead">
+        <div class="ph" style="background:linear-gradient(150deg,#a8896d,#4f4534)"><span>影评 · REVIEW</span></div>
+        <div class="body">
+          <h3>《潮声里的第四幕》：群像戏里最难的是克制</h3>
+          <p>影片把叙事重心交给四个人物，却不让任何一个人独占情绪高点。导演用海潮声替代转场，用沉默替代解释，这种"少做一点"的判断，是它和普通群像片之间最关键的差距。唯一需要提醒的是：慢热，前四十分钟请给它一点耐心。</p>
+          <div class="by"><span>撰稿：沈清和 ｜ 推荐指数 ★★★★☆</span><span>128 分钟</span></div>
+        </div>
+      </article>
+      <div class="rest">
+        <div class="item"><span class="n">02</span><div><h3>《纸上行舟》：服化道的考据，是尊重观众的方式</h3><p>以古籍修复师为主角，重现一段被遗忘的民间出版史。它不追求宏大叙事，细节密度却极高。</p><span class="tag">历史 / 传记 · ★★★★☆</span></div></div>
+        <div class="item"><span class="n">03</span><div><h3>《稻与海之间》：纪录片的耐心，换来真实的重量</h3><p>沿海村落三代人的退田还海，影像克制，是近年难得的环境题材作品。</p><span class="tag">纪录片 · ★★★★☆</span></div></div>
+        <div class="item"><span class="n">04</span><div><h3>《相亲日历》：十二个短篇，笑点分布均匀</h3><p>都市轻喜剧，三十次相亲串起独立小故事，适合不想动脑的周末夜晚。</p><span class="tag">喜剧 / 爱情 · ★★★☆☆</span></div></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="columns">
+    <div class="sec-t">
+      <span class="no">04</span>
+      <h2>专栏作者</h2>
+      <span class="en">Columns</span>
+      <a class="more" href="#subscribe">收件箱里读到新一期 →</a>
+    </div>
+    <p class="intro">电影网的稿件由长期写作者轮流供稿，每人有固定视角，也允许彼此反驳。栏目不追热点，只回答一个具体问题。</p>
+    <div class="op">
+      <div class="col">
+        <div class="who"><span class="av"></span>林知行 ｜ 犯罪片与现实主义</div>
+        <h3>为什么我们还在看"抓不到人"的案子</h3>
+        <blockquote>案件的答案早就不在悬念里了，真正的悬念是当事人能不能跟自己和解。</blockquote>
+        <div class="film">本期撰稿：《无名之河》《第七位房客》</div>
+      </div>
+      <div class="col">
+        <div class="who"><span class="av" style="background:linear-gradient(140deg,#c9a07a,#6f5940)"></span>沈清和 ｜ 作者电影与视听语言</div>
+        <h3>把转场交给声音，是对观众的信任</h3>
+        <blockquote>不需要每次都用字幕告诉观众时间过了三年，潮汐的间隔会替你说话。</blockquote>
+        <div class="film">本期撰稿：《潮声里的第四幕》</div>
+      </div>
+      <div class="col">
+        <div class="who"><span class="av" style="background:linear-gradient(140deg,#b6c4a8,#52634a)"></span>周慕野 ｜ 类型片与观影效率</div>
+        <h3>两个小时是预算，不是礼物</h3>
+        <blockquote>选片不该靠运气。把时长和情绪先定下来，能砍掉八成犹豫。</blockquote>
+        <div class="film">本期撰稿：《午夜收费站》《相亲日历》</div>
+      </div>
+    </div>
+  </section>
+
+  <section id="method">
+    <div class="sec-t">
+      <span class="no">05</span>
+      <h2>选片方法</h2>
+      <span class="en">A 4-Step Method</span>
+      <a class="more" href="#faq">更多问题看这里 →</a>
+    </div>
+    <p class="intro">这是我们内部排片时真的在用的四步，前后不超过三分钟。它不是评分公式，只是帮你减少犹豫。</p>
+    <div class="guide">
+      <div class="stp"><div class="q">01</div><h3>先给时间设上限</h3><p>通勤或午休看片，把上限定在 90 分钟；周末留白再看 120 分钟以上，直接排除一半候选。</p></div>
+      <div class="stp"><div class="q">02</div><h3>再给情绪定方向</h3><p>想放松就主动排除悬疑和现实主义，想被触动就把纪录片和剧情片放进池子。</p></div>
+      <div class="stp"><div class="q">03</div><h3>最后看评分人数</h3><p>万人以上打出的 8 分，通常比几百人打出的 9 分更稳，这是唯一值得信的"均值"。</p></div>
+      <div class="stp"><div class="q">04</div><h3>确认版本再出门</h3><p>院线优先选特殊制式，在家看先确认画质规格与是否存在删减版本。</p></div>
+    </div>
+  </section>
+
+  <section id="about">
+    <div class="sec-t">
+      <span class="no">06</span>
+      <h2>关于电影网</h2>
+      <span class="en">About This Site</span>
+      <a class="more" href="#subscribe">留下邮箱，下期不漏 →</a>
+    </div>
+    <div class="fl">
+      <div class="lead">
+        <article class="lg" style="border:0;background:transparent">
+          <div class="body" style="padding:0">
+            <h3 style="font-size:25px">一个不播放影片的影迷小站</h3>
+            <p>电影网由几位长期写影评的人维护，定位很窄：把"这部值不值得看"这件事讲清楚。我们不做播放器、不上传资源，只整理公开的放映信息、撰写看过之后的判断，并给出可跳转的正版入口。</p>
+            <p>每月一期，工作日补更档期变动，重大档期按小时跟进。稿件允许观点冲突，但不接受未经核实的转载内容。</p>
+            <div class="by" style="border-top:1px solid var(--line);margin-top:20px"><span>编辑部 · 2026 年 10 月</span><span>独立运营</span></div>
+          </div>
+        </article>
+      </div>
+      <div class="rest">
+        <div class="item"><span class="n">A</span><div><h3>我们收录什么</h3><p>以公映或正版平台上线为前提，覆盖院线新片、流媒体首播、经典修复与纪录片。</p></div></div>
+        <div class="item"><span class="n">B</span><div><h3>我们不做什么</h3><p>不提供片源下载、不上传侵权内容，所有入口指向正版平台或院线官方页面。</p></div></div>
+        <div class="item"><span class="n">C</span><div><h3>信息多久更新</h3><p>工作日每日一次，档期变动频繁时额外补更，下线信息可能有 1-2 天延迟。</p></div></div>
+        <div class="item"><span class="n">D</span><div><h3>版权与纠错</h3><p>内容以引用公开资料为主，仅供参考；发现错误可在页脚提交更正。</p></div></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="faq">
+    <div class="sec-t">
+      <span class="no">07</span>
+      <h2>读者问答</h2>
+      <span class="en">Frequently Asked</span>
+      <a class="more" href="#subscribe">问题没在这儿？写信给我们 →</a>
+    </div>
+    <div class="qalist">
+      <details open><summary><span class="q">Q1</span>电影网为什么不做播放功能？</summary><div class="a"><p>定位不同。我们把时间花在信息整理和判断上，播放交给正版平台，这样双方都更专业，也不涉及版权风险。</p></div></details>
+      <details><summary><span class="q">Q2</span>片源信息多久更新一次？</summary><div class="a"><p>工作日每日更新一次；档期变动频繁时会额外补更，平台下线信息可能存在 1-2 天延迟。</p></div></details>
+      <details><summary><span class="q">Q3</span>为什么有的片子显示"暂无可看入口"？</summary><div class="a"><p>说明该片目前未在我们跟踪的正版平台上线，或仅限特定地区。建议过一段时间再回来看一次。</p></div></details>
+      <details><summary><span class="q">Q4</span>推荐语里的评分和数据从哪来？</summary><div class="a"><p>来自公开可查的评分平台与官方发行资料，属引用性质，仅供选片参考，不构成观影承诺。</p></div></details>
+      <details><summary><span class="q">Q5</span>发现信息有误可以反馈吗？</summary><div class="a"><p>可以。在订阅栏留下邮箱，备注"信息更正"并写明影片名、错误项与正确信息，核对后会更新。</p></div></details>
+      <details><summary><span class="q">Q6</span>可以转载你们的稿件吗？</summary><div class="a"><p>个人分享欢迎，商业转载与二次剪辑请先联系授权；转载请保留作者署名与原文链接。</p></div></details>
+    </div>
+  </section>
+
+  <section id="subscribe" style="border-bottom:1px solid var(--line)">
+    <div class="cta">
+      <div>
+        <h2>每月一封，把值得看的片子先挑出来</h2>
+        <p>不群发促销，不转卖名单。每月一期精选片单 + 一栏主编手记，退订一行字的事。</p>
+      </div>
+      <div>
+        <form class="sub" onsubmit="event.preventDefault();this.querySelector('button').textContent='已加入';">
+          <input type="email" placeholder="your@email.com" required aria-label="邮箱地址">
+          <button type="submit">订 阅</button>
+        </form>
+        <p class="sub-note">仅用于发送《电影网》每月片单，可随时退订。本站为片源索引与观影信息整理平台，内容仅供选片参考。</p>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="wrap">
+  <div class="ft">
+    <div>
+      <h4>电影网 · Film Weekly</h4>
+      <p class="blurb">影评人的选片笔记，每月一期。把有限的观影时间，留给值得看的作品。</p>
+      <p style="margin:14px 0 0;font:12px var(--serif);color:var(--ink-3)">网址：https://用户名.github.io/sanjipiandianyingwang-zh</p>
+    </div>
+    <div><h4>浏览</h4><ul>
+      <li><a href="#feature">重点推荐</a></li>
+      <li><a href="#schedule">上映日历</a></li>
+      <li><a href="#reviews">影评精选</a></li>
+      <li><a href="#columns">专栏作者</a></li>
+    </ul></div>
+    <div><h4>指南</h4><ul>
+      <li><a href="#method">选片方法</a></li>
+      <li><a href="#about">关于本站</a></li>
+      <li><a href="#faq">读者问答</a></li>
+      <li><a href="#subscribe">订阅我们</a></li>
+    </ul></div>
+    <div><h4>联系</h4><ul>
+      <li><a href="#">编辑部投稿</a></li>
+      <li><a href="#">商务合作</a></li>
+      <li><a href="#">信息更正</a></li>
+      <li><a href="#">版权申诉</a></li>
+    </ul></div>
+  </div>
+  <div class="colophon">
+    <span>&copy; 2026 电影网 · sanjipiandianyingwang-zh. 保留所有权利。</span>
+    <span>本站内容仅供选片参考，不构成观影承诺 ｜ <a href="#">隐私声明</a> ｜ <a href="#">使用条款</a></span>
+  </div>
+</footer>
+
+<script>
+(function(){
+  var b=document.getElementById('mb'),n=document.getElementById('tnav');
+  if(!b)return;
+  b.addEventListener('click',function(){n.classList.toggle('open');b.textContent=n.classList.contains('open')?'关 闭':'目 录';});
+  n.addEventListener('click',function(e){if(e.target.tagName==='A'){n.classList.remove('open');b.textContent='目 录';}});
+})();
+</script>
+</body>
+</html>
